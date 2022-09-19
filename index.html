@@ -47,6 +47,7 @@ def generate(a):
                 if x==days[day]:
                     for y in (tt[keys]['sections'][lec]['lectures'].split(' ')):
                         if y==str(hour):
+                            pyscript.write('classes', '')
                             element = document.createElement('div')
                             element.innerText = keys +" "+ str(tt[keys]['title']) +" "+ lec +'\n'+str(tt[keys]['sections'][lec]) 
                             document.getElementById("classes").append(element)
